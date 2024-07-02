@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LockedIn/static/css/main.61979c76.css",
+    "main.js": "/LockedIn/static/js/main.6bb26619.js",
+    "index.html": "/LockedIn/index.html",
+    "main.61979c76.css.map": "/LockedIn/static/css/main.61979c76.css.map",
+    "main.6bb26619.js.map": "/LockedIn/static/js/main.6bb26619.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61979c76.css",
+    "static/js/main.6bb26619.js"
+  ]
+}
