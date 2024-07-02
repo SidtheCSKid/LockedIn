@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  @apply box-border m-0 p-0;
+  font-family: "Poppins", sans-serif;
+}
+#root {
+  @apply w-full relative;
+  background: #ffffff;
+}
+.Home {
+  @apply w-full h-screen relative flex flex-col justify-between items-center;
+}
+
+.Tasks {
+  @apply w-full min-h-screen relative;
+}
+
+/* Navbar */
+.NavbarWrapper {
+  @apply w-screen flex flex-row justify-between items-center pt-4 pb-1;
+
+  /* border: 2px solid #5eff00; */
+}
+
+.Logo {
+  @apply text-5xl font-semibold w-fit select-none leading-[90%] ml-4;
+  text-shadow: 3px 0px 0px rgba(128, 128, 128, 0.5);
+
+  /* border: 2px solid #ff00c3; */
+}
+.navbar-links {
+  @apply flex items-center justify-between gap-3 cursor-pointer text-[gray] transition-[color] duration-[0.3s] ease-[ease] hover:text-black;
+}
+
+.navbar-links-active {
+  @apply text-[black];
+}
+
+.navbar-label {
+  @apply text-xl select-none;
+}
+
+/* ButtonGroup */
+.ButtonGroup {
+  @apply absolute -translate-x-2/4 flex justify-evenly gap-20 left-2/4;
+
+  /* border: 2px solid #00c8ff; */
+
+  /* Position the middle item absolutely */
+
+  /* Center horizontally relative to the container */
+
+  /* Adjust for half of its own width */
+}
+
+/* UserIcon*/
+.UserIcon {
+  @apply cursor-pointer transition-transform duration-[0.3s] ease-[ease] mr-4 hover:scale-110;
+
+  /* border: 2px solid #0000ff; */
+}
+
+/* Clock */
+.ClockWrapper {
+  @apply absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+
+  /* border: 2px solid #ff0000; */
+}
+.Clock {
+  @apply leading-[90%] text-[13rem] font-medium select-none;
+  text-shadow: 5px 2px 0px rgba(128, 128, 128, 0.5);
+
+  /* Offset by 2px right and down, no blur, semi-transparent black */
+}
+
+/* Quote */
+.QuoteWrapper {
+  @apply max-w-[40vw] text-center mb-5;
+}
+
+.author-text {
+  @apply text-[gray] opacity-0 transition-all ease-out duration-300 font-medium relative bottom-4;
+}
+
+/* Show author text on hover */
+.QuoteWrapper:hover .author-text {
+  @apply opacity-100 bottom-0;
+}
+.QuoteWrapper:hover .quote-text {
+  @apply top-0;
+}
+
+.quote-text {
+  @apply italic text-[gray] relative transition-all ease-out duration-300 mb-[0.3rem] top-4;
+}
+
+.TasksWrapper {
+  @apply my-4 mx-20 h-fit;
+}
+
+a:-webkit-any-link {
+  @apply text-[unset];
+  text-decoration: unset;
+}
+
+
+
+
